@@ -1,3 +1,4 @@
 # first_blog.git
-- about: a simple blog web project 
-- env: linux, python, django, pure
+- What:  a simple blog web project 
+
+- Use:  linux, python, django, pure
