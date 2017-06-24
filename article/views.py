@@ -9,7 +9,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home(request):
 	posts = Article.objects.all()
-	paginator = Paginator(posts, 2)
+	paginator = Paginator(posts, 3)
 	page = request.GET.get('page')
 	try:
 		post_list = paginator.page(page)
@@ -55,7 +55,7 @@ def blog_search(request):
 
 class RSSFeed(Feed):
 	title = "RSS feed -article"
-	link = "feeds/posts/"
+	link = "/feeds/posts/"
 	description = "RSS feed - blog posts"
 
 	def items(self):
