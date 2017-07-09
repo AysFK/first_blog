@@ -9,9 +9,8 @@
 	    <link rel="stylesheet" href="{% static '/css/pure-min.css' %}">
 	    <link rel="stylesheet" href="{% static '/css/grids-responsive-min.css' %}">
 	    <link rel="stylesheet" href="{% static '/css/blog.css' %}">
-        <link rel="stylesheet" href="{% static '/css/github.min.css' %}"/>
-        <script src="{% static '/js/highlight.min.js' %}"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <link rel="stylesheet" href="{% static '/css/github-markdown.css' %}">
+        <link rel="stylesheet" href="{% static '/css/codehilite.css' %}">
 	</head>
 	<body>
 		<div id="layout" class="pure-g">
@@ -53,9 +52,9 @@
     	</div>
 
     <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
             {% block content %}
             {% endblock %}
+		<div>
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal pure-menu-open">
                     <ul>

@@ -14,7 +14,7 @@
 					<a class="post-category post-category-js" href="{% url "search_tag" tag=post.category %}">{{ post.category | title}}</a>
 				</p>
 			</header>
-			<div class="post-description">
+			<div class="markdown-body">
 				<p>
 					{{ post.content | custom_markdown | truncatewords_html:15}}
 				</p>
